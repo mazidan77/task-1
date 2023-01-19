@@ -30,7 +30,7 @@ namespace WebApplication1.Controllers
             return View("addform");
         }
 
-        public IActionResult adddata(Party po)
+        public IActionResult adddata(Party po) 
         {
             sampledata.add(po);
             List<Party> p = sampledata.Friends.Where(x => x.attend == "yes").ToList();
